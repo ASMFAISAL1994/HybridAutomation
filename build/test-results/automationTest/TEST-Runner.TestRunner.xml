@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Runner.TestRunner" tests="3" skipped="0" failures="1" errors="0" timestamp="2023-09-11T10:44:43" hostname="asms-MacBook-Pro.local" time="671.47">
+  <properties/>
+  <testcase name="runScenario[0](&quot;User will Search for prefered products and add to curt&quot;, &quot;Optional[Daraz Bangladesh Website]&quot;)" classname="Runner.TestRunner" time="286.641"/>
+  <testcase name="runScenario[1](&quot;User will click Google to Creating Daraz Acoount&quot;, &quot;Optional[Create Daraz Account]&quot;)" classname="Runner.TestRunner" time="177.356"/>
+  <testcase name="runScenario[2](&quot;Customer will Add to Cart his preferred product&quot;, &quot;Optional[Add to Cart Product]&quot;)" classname="Runner.TestRunner" time="207.454">
+    <failure message="org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//span[@title='XL']&quot;}&#10;  (Session info: chrome=116.0.5845.179)&#10;For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element&#10;Build info: version: '4.7.0', revision: '0a5b49d16f'&#10;System info: os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.16', java.version: '1.8.0_202'&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Command: [4e63d80296e2847bcb5a450fe1ec374e, findElement {using=xpath, value=//span[@title='XL']}]&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 116.0.5845.179, chrome: {chromedriverVersion: 116.0.5845.96 (1a3918166880..., userDataDir: /var/folders/bt/93qvx9l50pl...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:50603}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: MAC, proxy: Proxy(), se:cdp: ws://localhost:50603/devtoo..., se:cdpVersion: 116.0.5845.179, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}&#10;Session ID: 4e63d80296e2847bcb5a450fe1ec374e" type="org.openqa.selenium.NoSuchElementException">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//span[@title='XL']&quot;}
+  (Session info: chrome=116.0.5845.179)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.7.0', revision: '0a5b49d16f'
+System info: os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.16', java.version: '1.8.0_202'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [4e63d80296e2847bcb5a450fe1ec374e, findElement {using=xpath, value=//span[@title='XL']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 116.0.5845.179, chrome: {chromedriverVersion: 116.0.5845.96 (1a3918166880..., userDataDir: /var/folders/bt/93qvx9l50pl...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:50603}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: MAC, proxy: Proxy(), se:cdp: ws://localhost:50603/devtoo..., se:cdpVersion: 116.0.5845.179, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 4e63d80296e2847bcb5a450fe1ec374e
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:541)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:365)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:357)
+	at POM.WebElement.UserChooseSize(WebElement.java:100)
+	at Stepdefinition.DarazStepdefs.chooseTheTShirtSize(DarazStepdefs.java:77)
+	at ✽.choose the T-shirt size(file:///Users/asmfaisal/Desktop/HybridAutomation/src/test/resources/WebFeatures/03AddtoCart.feature:7)
+</failure>
+  </testcase>
+  <system-out><![CDATA[
+@smoke
+Scenario Outline: User will Search for prefered products and add to curt                                     # src/test/resources/WebFeatures/01Home.feature:13
+  Given base urls                                                                                            # Stepdefinition.DarazStepdefs.baseUrls()
+  When User will  click SignupLogin                                                                          # Stepdefinition.DarazStepdefs.userWillClickSignupLogin()
+  And User will provide '01555330330', '123456', 'Faisal@#330','December', '19','1994', 'male', 'ASM FAISAL' # Stepdefinition.DarazStepdefs.userWillProvideInfos(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)
+  Then User will successfully SIGNUP                                                                         # Stepdefinition.DarazStepdefs.userWillSuccessfullySIGNUP()
+
+@smoke
+Scenario Outline: User will click Google to Creating Daraz Acoount                  # src/test/resources/WebFeatures/02GoogleLogin.feature:11
+  Given user in the daraz account page to create account                            # Stepdefinition.DarazStepdefs.userInTheDarazAccountPageToCreateAccount()
+  When user will cilck to Goolge button for signup                                  # Stepdefinition.DarazStepdefs.userWillCilckToGoolgeButtonForSignup()
+  And user will provide 'a.s.m.faisal@g.bracu.ac.bd' '01623928456'and 'man fashion' # Stepdefinition.DarazStepdefs.userWillProvideAnd(java.lang.String,java.lang.String,java.lang.String)
+  Then user will order  products                                                    # Stepdefinition.DarazStepdefs.userWillOrderProducts()
+
+@smoke
+Scenario: Customer will Add to Cart his preferred product            # src/test/resources/WebFeatures/03AddtoCart.feature:4
+  Given Customer in the Daraz website page                           # Stepdefinition.DarazStepdefs.customerInTheDarazWebsitePage()
+  When customer will click his preferred T-shirt                     # Stepdefinition.DarazStepdefs.customerWillClickHisPreferredTShirt()
+  And choose the T-shirt size                                        # Stepdefinition.DarazStepdefs.chooseTheTShirtSize()
+      org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//span[@title='XL']"}
+  (Session info: chrome=116.0.5845.179)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.7.0', revision: '0a5b49d16f'
+System info: os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.16', java.version: '1.8.0_202'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [4e63d80296e2847bcb5a450fe1ec374e, findElement {using=xpath, value=//span[@title='XL']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 116.0.5845.179, chrome: {chromedriverVersion: 116.0.5845.96 (1a3918166880..., userDataDir: /var/folders/bt/93qvx9l50pl...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:50603}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: MAC, proxy: Proxy(), se:cdp: ws://localhost:50603/devtoo..., se:cdpVersion: 116.0.5845.179, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 4e63d80296e2847bcb5a450fe1ec374e
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:541)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:365)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:357)
+	at POM.WebElement.UserChooseSize(WebElement.java:100)
+	at Stepdefinition.DarazStepdefs.chooseTheTShirtSize(DarazStepdefs.java:77)
+	at ✽.choose the T-shirt size(file:///Users/asmfaisal/Desktop/HybridAutomation/src/test/resources/WebFeatures/03AddtoCart.feature:7)
+
+  And customer will choose and click the size of the T-shirt         # Stepdefinition.DarazStepdefs.customerWillChooseAndClickTheSizeOfTheTShirt()
+  And customer will click Add to Cart button                         # Stepdefinition.DarazStepdefs.customerWillClickAddToCartButton()
+  And customer will go to cart to click checkbox and  delete product # Stepdefinition.DarazStepdefs.customerWillGoToCartToClickCheckboxAndDeleteProduct()
+  Then customer will click the Remove button to empty cart           # Stepdefinition.DarazStepdefs.customerWillClickTheRemoveButtonToEmptyCart()
+]]></system-out>
+  <system-err><![CDATA[SLF4J: No SLF4J providers were found.
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See https://www.slf4j.org/codes.html#noProviders for further details.
+Starting ChromeDriver 116.0.5845.96 (1a391816688002153ef791ffe60d9e899a71a037-refs/branch-heads/5845@{#1382}) on port 21799
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+Sep 11, 2023 4:44:52 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 116
+Sep 11, 2023 4:44:52 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$3
+WARNING: Unable to find version of CDP to use for . You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.7.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+]]></system-err>
+</testsuite>
